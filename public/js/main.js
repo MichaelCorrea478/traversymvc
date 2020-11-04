@@ -1,1 +1,3 @@
-//alert('JS Working!');
+$(function(){
+    console.log('Jquery running...');
+});
