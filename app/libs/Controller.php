@@ -23,6 +23,7 @@ class Controller {
         if (file_exists('../app/views/' . $view . '.php')) {
 
             require_once('../app/views/includes/header.php');
+            require_once('../app/views/includes/navbar.php');
             require_once('../app/views/' . $view . '.php');
             require_once('../app/views/includes/footer.php');
 

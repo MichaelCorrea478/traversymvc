@@ -10,11 +10,9 @@ class Pages extends Controller {
 
     public function index() {
 
-        $posts = $this->postModel->getPosts();
-
         $data = [
-            'title' => 'Welcome',
-            'posts' => $posts
+            'title' => 'SharePosts',
+            'description' => 'Simple Social Network built on the Traversy MVC PHP Framework'
         ];
 
         
@@ -24,7 +22,10 @@ class Pages extends Controller {
 
     public function about($id) {
 
-        $data = ['title' => 'About Page'];
+        $data = [
+            'title' => 'About Page',
+            'description' => 'App to share posts with other users'
+        ];
 
         $this->view('pages/about', $data);
 
